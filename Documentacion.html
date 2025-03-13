@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic-Fit - Documentacion</title>
     <link rel="stylesheet" href="documentacion.css">
+    <link rel="icon" href="bassicfit.png">
 
     <style>
         body {
@@ -13,9 +14,10 @@
             padding: 0;
             background-color: #f4f4f4;
             width: 100vw;
-            height: auto; /* Cambiado a auto para que la altura se ajuste al contenido */
+            height: auto;
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -74,6 +76,8 @@
             overflow: hidden;
             display: flex;
             flex-wrap: wrap;
+            position: relative;
+            margin-bottom: 0;
         }
 
         .function {
@@ -84,21 +88,31 @@
         }
 
         #funcion-2 {
-            float: right;
+            float: left;
         }
 
-        #funcion-1 {
-            float: left;
+        #funcion-1, #funcion-3 {
+            float: right;
+            width: 48%;
         }
 
         #funcion-3 {
             width: 100%;
-            text-align: center;
         }
 
         .function img {
-            max-width: 100%;
-            height: auto;
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        #funcion-1 img, #funcion-3 img {
+            width: 400px;
+            height: 400px;
+        }
+
+        .functions-section h3 {
+            color: #ff9800;
         }
 
         @media (max-width: 768px) {
@@ -123,7 +137,7 @@
             padding: 10px 0;
             flex-wrap: wrap;
             position: fixed;
-            top: 0;
+            top: 0px;
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
@@ -156,26 +170,39 @@
         }
 
         .download-section {
-    text-align: center;
-    margin: 20px auto;
-    color: orange;
-}
+            text-align: center;
+            color: orange;
+            margin-top: 0;
+            padding-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 95%;
+            max-width: 1600px;
+            margin: 2em auto;
+        }
 
-.download-section h2 {
-    margin-bottom: 15px;
-}
+        .download-section h2 {
+            margin-bottom: 30px;
+        }
 
-.app-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+        .app-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-.app-links img {
-    width: 50px;
-    height: 50px;
-    margin: 8px;
-}
+        .app-links img {
+            width: 50px;
+            height: 50px;
+            margin: 8px;
+        }
+
+        footer {
+            margin-top: auto;
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -199,29 +226,29 @@
             <p>Participa en clases grupales energéticas y motivadoras, desde spinning hasta yoga.</p>
         </div>
         <div class="function" id="funcion-3">
-            <img src="funcion3.jpg" alt="Función 3">
+            <img src="funcion3.png" alt="Función 3">
             <h3>Seguimiento de Progreso</h3>
             <p>Monitorea tu progreso con herramientas de seguimiento de rendimiento y métricas clave.</p>
         </div>
     </section>
 
+    <footer class="download-section">
+        <h2>Descarga nuestra App:</h2>
+        <div class="app-links">
+            <a href="https://play.google.com/store/apps/details?id=com.basicfit.trainingApp&hl=es_419"><img src="googleplay.png" alt="Google Play"></a>
+            <a href="https://apps.apple.com/es/app/basic-fit/id1588263601"><img src="appstore.png" alt="App Store"></a>
+            <a href="https://www.basic-fit.com/es-es/basic-fit-app"><img src="descargar.png" alt="Descarga Directa"></a>
+        </div>
+    </footer>
 
     <div class="download-section">
-            
-        <h2>Descarga nuestra App:</h2>
-       
+        <h2>Redes Sociales:</h2>
         <div class="app-links">
-       
-       <a href="https://play.google.com/store/apps/details?id=com.basicfit.trainingApp&hl=es_419"><img src="googleplay.png" alt="Google Play"></a>
-       
-        <a href="https://apps.apple.com/es/app/basic-fit/id1588263601"><img src="appstore.png" alt="App Store"></a>
-       
-        <a href="https://www.basic-fit.com/es-es/basic-fit-app"><img src="descargar.png" alt="Descarga Directa"></a>
-       
-       </div>
-       
-       </div>
-       
+            <a href="https://www.instagram.com/basicfites/"><img src="instagram.png" alt="instagram"></a>
+            <a href="https://x.com/BasicFit_ESP"><img src="tiwitter.png" alt="Twitter"></a>
+            <a href="https://www.tiktok.com/@basicfit_?lang=es"><img src="tiktok.png" alt="TikTok"></a>
+        </div>
+    </div>
 
     <nav>
         <strong>
