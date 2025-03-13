@@ -1,67 +1,107 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Define que el documento es HTML5 y establece el idioma en español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic-Fit - Registro</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="bassicfit.png">
-    
-    
+    <meta charset="UTF-8"> <!-- Configura la codificación de caracteres en UTF-8 para admitir caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite que la página se adapte a dispositivos móviles -->
+    <title>Basic-Fit - Registro</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Vincula la hoja de estilos externa para dar formato a la página -->
+    <link rel="icon" href="bassicfit.png"> <!-- Especifica el icono de la pestaña del navegador -->
 </head>
+
 <body>
-    <div class="app">
+    <div class="app"> <!-- Contenedor principal de la aplicación -->
+        
         <header>
-            <img src="logo.jpg" alt="Basic-Fit Logo">
+            <img src="logo.jpg" alt="Basic-Fit Logo"> <!-- Muestra el logotipo de Basic-Fit -->
         </header>
-        <div class="content">
-            <h2>Registro</h2>
+
+        <div class="content"> <!-- Sección de contenido principal -->
+            <h2>Registro</h2> <!-- Título principal del formulario -->
+
+            <!-- Formulario de registro -->
             <form action="http://www.cursos-diseño.es/mostrar.php" method="post" class="register-form">
+                <!-- Campo para ingresar el nombre y apellidos -->
                 <label for="nombre">Nombre y apellidos:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre" required> <!-- Campo obligatorio -->
+
+                <!-- Campo para ingresar la edad -->
                 <label for="edad">Edad:</label>
-                <input type="number" id="edad" name="edad" required>
+                <input type="number" id="edad" name="edad" required> <!-- Solo acepta números y es obligatorio -->
+
+                <!-- Campo para ingresar la dirección -->
                 <label for="direccion">Dirección completa:</label>
-                <textarea id="direccion" name="direccion" required></textarea>
+                <textarea id="direccion" name="direccion" required></textarea> <!-- Área de texto para direcciones -->
+
+                <!-- Campo para ingresar el NIF (Número de Identificación Fiscal) -->
                 <label for="nif">NIF:</label>
-                <input type="text" id="nif" name="nif" required>
+                <input type="text" id="nif" name="nif" required> <!-- Campo obligatorio -->
+
+                <!-- Campo para ingresar el correo electrónico -->
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required> <!-- Campo obligatorio con validación de formato de email -->
+
+                <!-- Campo para ingresar el número de teléfono -->
                 <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-                <label for="condiciones">Acepto las condiciones: <input type="checkbox" id="condiciones" name="condiciones" required></label>
+                <input type="tel" id="telefono" name="telefono" required> <!-- Campo obligatorio -->
+
+                <!-- Checkbox para aceptar las condiciones -->
+                <label for="condiciones">Acepto las condiciones: 
+                    <input type="checkbox" id="condiciones" name="condiciones" required>
+                </label>
+
+                <!-- Botón para enviar el formulario -->
                 <button type="submit">Registrar</button>
             </form>
         </div>
 
+        <!-- Sección para descargar la aplicación -->
         <div class="download-section">
-            <h2>Descarga nuestra App:</h2>
-            <div class="app-links">
-                <a href="https://play.google.com/store/apps/details?id=com.basicfit.trainingApp&hl=es_419"><img src="googleplay.png" alt="Google Play"></a>
-                <a href="https://apps.apple.com/es/app/basic-fit/id1588263601"><img src="appstore.png" alt="App Store"></a>
-                <a href="https://www.basic-fit.com/es-es/basic-fit-app"><img src="descargar.png" alt="Descarga Directa"></a>
+            <h2>Descarga nuestra App:</h2> <!-- Título de la sección -->
+
+            <div class="app-links"> <!-- Contenedor de los enlaces de descarga -->
+                <a href="https://play.google.com/store/apps/details?id=com.basicfit.trainingApp&hl=es_419">
+                    <img src="googleplay.png" alt="Google Play"> <!-- Imagen con enlace a Google Play -->
+                </a>
+                <a href="https://apps.apple.com/es/app/basic-fit/id1588263601">
+                    <img src="appstore.png" alt="App Store"> <!-- Imagen con enlace a la App Store -->
+                </a>
+                <a href="https://www.basic-fit.com/es-es/basic-fit-app">
+                    <img src="descargar.png" alt="Descarga Directa"> <!-- Imagen con enlace a la descarga directa -->
+                </a>
             </div>
         </div>
 
+        <!-- Sección de redes sociales -->
         <div class="download-section">
-            <h2>Redes Sociales:</h2>
-            <div class="app-links">
-                <a href="https://www.instagram.com/basicfites/"><img src="instagram.png" alt="instagram"></a>
-                <a href="https://x.com/BasicFit_ESP"><img src="tiwitter.png" alt="Twitter"></a>
-                <a href="https://www.tiktok.com/@basicfit_?lang=es"><img src="tiktok.png" alt="TikTok"></a>
+            <h2>Redes Sociales:</h2> <!-- Título de la sección -->
+
+            <div class="app-links"> <!-- Contenedor de los enlaces a redes sociales -->
+                <a href="https://www.instagram.com/basicfites/">
+                    <img src="instagram.png" alt="Instagram"> <!-- Imagen con enlace a Instagram -->
+                </a>
+                <a href="https://x.com/BasicFit_ESP">
+                    <img src="tiwitter.png" alt="Twitter"> <!-- Imagen con enlace a Twitter -->
+                </a>
+                <a href="https://www.tiktok.com/@basicfit_?lang=es">
+                    <img src="tiktok.png" alt="TikTok"> <!-- Imagen con enlace a TikTok -->
+                </a>
             </div>
         </div>
 
+        <!-- Menú de navegación -->
         <nav>
             <strong>
-              <a href="index.html" >Portada</a>
-              <a href="Documentacion.html">Documentacion</a>
-              <a href="registro.html" class="active">Registro</a>
-              <a href="aviso-legal.html">Aviso Legal</a>
+                <!-- Enlace a la portada -->
+                <a href="index.html">Portada</a>
+                <!-- Enlace a la documentación -->
+                <a href="Documentacion.html">Documentación</a>
+                <!-- Enlace al registro (actualmente activo) -->
+                <a href="registro.html" class="active">Registro</a>
+                <!-- Enlace al aviso legal -->
+                <a href="aviso-legal.html">Aviso Legal</a>
             </strong>
-              
-          </nav>
+        </nav>
         
-    </div>
+    </div> <!-- Fin del contenedor principal -->
 </body>
 </html>
