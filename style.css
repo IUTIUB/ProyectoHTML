@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente similar a Basic-Fit */
+    margin: 0;
+    background-color: #f5f5f5; /* Fondo gris claro */
+}
+
+.app {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    background: #fff; /* Fondo blanco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f8f8; /* Fondo gris claro para el header */
+}
+
+header img {
+    width: 180px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+.content {
+    padding: 20px;
+    text-align: left; /* Alinea el contenido a la izquierda */
+}
+
+nav {
+    background: #fff; /* Fondo blanco para la barra de navegación */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid #eee; /* Borde inferior sutil */
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px;
+    color: #333; /* Color de texto oscuro */
+    font-size: 1em;
+    display: inline-block;
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+nav a:hover, nav a.active {
+    background-color: #f0f0f0; /* Color de fondo al pasar el ratón */
+    color: #ff9800; /* Color naranja al activar */
+}
+
+nav a.active {
+    font-weight: 600; /* Texto en negrita para la página activa */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.list li {
+    background: #f0f0f0;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-left: 4px solid #ff9800; /* Naranja para la lista */
+    font-size: 1em;
+    border-radius: 4px;
+}
+
+h2, h3 {
+    color: #ff9800; /* Naranja para los títulos */
+    margin-bottom: 15px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.register-form label {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.register-form input, .register-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.register-form button {
+    padding: 12px 20px;
+    background-color: #ff9800; /* Naranja para el botón */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+    background-color: #f57c00; /* Naranja más oscuro al pasar el ratón */
+}
+
+.legal-content {
+    line-height: 1.6;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.intro-text {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.intro-text h1 {
+    font-family: 'Montserrat', sans-serif; /* Fuente similar a Basic-Fit */
+    color: #ff9800;
+    font-size: 2em;
+    margin-bottom: 8px;
+}
+
+.intro-text p {
+    color: #666;
+    font-size: 1em;
+}
+
+.slideshow-container {
+    flex: 1;
+    max-width: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 300px; /* Ajusta la altura del slideshow */
+    object-fit: cover;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #fff;
+    font-size: 14px;
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.app-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.app-links img {
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin: 15px auto;
+    display: block;
+    border: none;
+}
+
+.download-section {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.download-section h2 {
+    margin-bottom: 15px;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro-text, .slideshow-container {
+        max-width: 100%;
+    }
+}
