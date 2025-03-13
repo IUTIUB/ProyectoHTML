@@ -22,12 +22,13 @@ body {
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #f8f8f8; /* Fondo gris claro para el header */
+    background-color: white; /* Fondo gris claro para el header */
 }
 
 header img {
     width: 180px; /* Ajusta el tamaño del logo */
     height: auto;
+    
 }
 
 .content {
@@ -88,8 +89,9 @@ nav a.active {
     padding: 12px;
     margin-bottom: 8px;
     border-left: 4px solid #ff9800; /* Naranja para la lista */
-    font-size: 1em;
+    font-size: 1.5em;
     border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h2, h3 {
@@ -260,4 +262,21 @@ iframe {
     .intro-text, .slideshow-container {
         max-width: 100%;
     }
+}
+
+.presentacion{
+    font-family: cursive;
+    font-size: larger;
+}
+
+.slogan{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-style: oblique;
+}
+
+.aviso{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: red;
 }
