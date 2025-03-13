@@ -1,26 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic-Fit - Documentacion</title>
+    <link rel="stylesheet" href="documentacion.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            width: 100vw;
+            height: auto; /* Cambiado a auto para que la altura se ajuste al contenido */
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #ff9800;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+        }
+
+        section {
+            max-width: 1600px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 95%;
+        }
+
+        .video-section {
+            max-width: 1600px;
+            margin: 2em auto;
+            padding: 1em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 95%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video-container {
+            text-align: center;
+            margin-bottom: 1em;
+            width: 90%;
+            max-width: 600px;
+            flex-grow: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+
+        .functions-section {
+            max-width: 1600px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 95%;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .function {
+            width: 48%;
+            margin-bottom: 1em;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        #funcion-2 {
+            float: right;
+        }
+
+        #funcion-1 {
+            float: left;
+        }
+
+        #funcion-3 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .function img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .function {
+                width: 100%;
+                float: none;
+            }
+
+            section, .video-section, .functions-section {
+                width: 98%;
+            }
+
+            .video-container {
+                width: 90%;
+            }
+        }
+
+        nav {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            flex-wrap: wrap;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            z-index: 100;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px;
+            color: #333;
+            font-size: 1em;
+            display: inline-block;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #f0f0f0;
+            color: #ff9800;
+        }
+
+        nav a.active {
+            font-weight: 600;
+        }
+
+        .vid {
+            margin: 40px;
+        }
+
+        .download-section {
+    text-align: center;
+    margin: 20px auto;
+    color: orange;
+}
+
+.download-section h2 {
+    margin-bottom: 15px;
+}
+
+.app-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.app-links img {
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+}
+    </style>
 </head>
 <body>
-    
+    <section class="video-section">
+        <h2 class="vid">Video General</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8-6IC1A5wSU?si=AKc2yD46nu4aNnbq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="functions-section">
+        <h2>Funciones Principales</h2>
+        <div class="function" id="funcion-1">
+            <img src="" alt="Función 1">
+            <h3>Entrenamiento Personalizado</h3>
+            <p>Accede a planes de entrenamiento adaptados a tus objetivos y nivel de fitness.</p>
+        </div>
+        <div class="function" id="funcion-2">
+            <img src="spinning.jpg" alt="Función 2">
+            <h3>Clases Grupales</h3>
+            <p>Participa en clases grupales energéticas y motivadoras, desde spinning hasta yoga.</p>
+        </div>
+        <div class="function" id="funcion-3">
+            <img src="funcion3.jpg" alt="Función 3">
+            <h3>Seguimiento de Progreso</h3>
+            <p>Monitorea tu progreso con herramientas de seguimiento de rendimiento y métricas clave.</p>
+        </div>
+    </section>
 
 
+    <div class="download-section">
+            
+        <h2>Descarga nuestra App:</h2>
+       
+        <div class="app-links">
+       
+       <a href="https://play.google.com/store/apps/details?id=com.basicfit.trainingApp&hl=es_419"><img src="googleplay.png" alt="Google Play"></a>
+       
+        <a href="https://apps.apple.com/es/app/basic-fit/id1588263601"><img src="appstore.png" alt="App Store"></a>
+       
+        <a href="https://www.basic-fit.com/es-es/basic-fit-app"><img src="descargar.png" alt="Descarga Directa"></a>
+       
+       </div>
+       
+       </div>
+       
 
-
-
-
-
-
-
-
-
-
-
-
-    
+    <nav>
+        <strong>
+            <a href="index.html">Portada</a>
+            <a href="Documentacion.html" class="active">Documentacion</a>
+            <a href="registro.html">Registro</a>
+            <a href="aviso-legal.html">Aviso Legal</a>
+        </strong>
+    </nav>
 </body>
 </html>
